@@ -36,7 +36,7 @@ function HomePageContentSec() {
                     Check My Projects
                 </button>
             </div>
-            <div className='bg-slate-800 w-full h-12 absolute bottom-0 left-0 overflow-hidden sm:hidden'>
+            <div className=' w-full h-12 absolute bottom-0 left-0 overflow-hidden sm:hidden'>
                 <div className='w-[100%] h-full flex'>
                     <motion.div initial={{ y: 1000 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className='w-[100%] flex justify-around items-center'>
                         <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
