@@ -38,3 +38,18 @@ body{
   border: 1px solid white;
   z-index: 1;
 }
+
+.bg-black-lite{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black-dark{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 635px) {
+  .Home__Section__Style{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
