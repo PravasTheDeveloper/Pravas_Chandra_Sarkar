@@ -9,6 +9,7 @@ export default function Home() {
       <div className='w-full h-screen home__screen__style'>
         <Head>
           <title>Pravas Chandra Sarkar</title>
+          <link rel="icon" href="/icon.png" sizes="any" />
         </Head>
         <Navbar />
         <Homepage />

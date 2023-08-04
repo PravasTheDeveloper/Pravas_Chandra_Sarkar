@@ -26,3 +26,15 @@ body{
 .Coding__Font{
   font-family: 'IBM Plex Mono', monospace;
 }
+
+.Home__Section__Style{
+  display: grid;
+  grid-template-columns: .3fr 1fr .3fr;
+}
+
+.Button__Hover__Style{
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+  z-index: 1;
+}
