@@ -12,7 +12,7 @@ export default function Homepage() {
         <div className='w-full h-full hidden sm:block'>
           <LeftSideHomePageContent />
         </div>
-        <motion.div initial={{y:1000}} animate={{y:30}} transition={{duration:.6  , delay:.4}} className='text text-white flex flex-col justify-center items-center h-full w-[100%] px-5 sm:px-0'>
+        <motion.div initial={{y:1000}} animate={{y:100}} transition={{duration:.6  , delay:.4}} className='text text-white flex flex-col justify-center items-center h-full w-[100%] px-5 sm:px-0'>
           <HomePageContentSec />
         </motion.div>
         <div className='w-full h-full justify-end hidden sm:flex'>
