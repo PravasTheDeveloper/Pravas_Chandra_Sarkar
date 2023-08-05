@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="h-10"><Link href="/">
             <AnimatedSVG />
           </Link></div>
-          <motion.div initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className='text-white'>
+          <motion.div initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className='text-white sm:hidden'>
             info.pravas.cs@gmail.com
           </motion.div>
 
