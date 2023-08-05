@@ -8,7 +8,8 @@ import { motion } from 'framer-motion'
 export default function Homepage() {
   return (
     <>
-      <div className='w-full h-[90%] text-white lg:bg-red-700 md:bg-blue-900 sm:bg-slate-800lg:container mx-auto Home__Section__Style overflow-hidden'>
+    
+      <div className='w-full h-[90%] text-white lg:container mx-auto Home__Section__Style overflow-hidden'>
         <div className='w-full h-full hidden sm:block'>
           <LeftSideHomePageContent />
         </div>
