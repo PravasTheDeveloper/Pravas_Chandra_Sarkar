@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-black-200 {
+  background-color: rgb(52, 53, 58);
+}
+
+body {
+
+  font-family: 'Mooli', sans-serif;
+}
+
+.bg-yellow-color {
+  background-color: rgb(255, 200, 107);
+}
+
+.text-yellow-color {
+  color: rgb(255, 200, 107);
+}
+
+.text-two:hover {
+  color: rgb(255, 200, 107);
+}
+
+.text-two {
+  color: rgb(151, 152, 154);
+}
+
+.Hero_Section_Image {
+  border-top: 5px solid rgb(255, 200, 107);
+  border-bottom: 5px solid rgb(255, 200, 107);
+  border-left: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+}
+
+.Contact_ME_Section {
+  border: 3px solid rgb(255, 200, 107);
+}
+
+.Hero_Name_Section {
+  font-family: 'Croissant One', cursive;
+}
