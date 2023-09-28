@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs"
 
 export default function HeroSection() {
     return (
@@ -25,8 +26,32 @@ export default function HeroSection() {
                             DEVELOPER
                         </div>
                         <div className='w-full h-auto flex'>
-                            <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color'>
+                            <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color cursor-pointer'>
                                 Contact Me
+                            </div>
+                        </div>
+                        <div className='w-full h-10 text-white text-2xl mt-10'>
+                            <div className='w-[300px] h-full flex items-center'>
+                                <div className='flex'>
+                                    <div className='mr-10 Icon_hover duration-200 cursor-pointer'>
+                                        <a href="https://www.facebook.com/profile.php?id=100034474604538" target='_blank'>
+                                            <BsFacebook />
+                                        </a>
+                                    </div>
+                                    <div className='mr-10 Icon_hover duration-200 cursor-pointer'>
+                                        <a href="https://github.com/PravasTheDeveloper" target='_blank'>
+                                            <BsGithub />
+                                        </a>
+                                    </div>
+                                    <div className='mr-10 Icon_hover duration-200 cursor-pointer'>
+                                        <a href="https://www.linkedin.com/in/pravaschandrasarkar/" target='_blank'>
+                                            <BsLinkedin />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className='flex-1 h-[4px] rounded-full bg-yellow-color'>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -36,9 +61,6 @@ export default function HeroSection() {
                         <div className='w-full h-full bg-slate-600 rounded-full'>
                             <img src="/image.png" alt="" />
                         </div>
-                    </div>
-                    <div className='w-[300px] h-10 bg-red-100 absolute bottom-10'>
-                        hello
                     </div>
                 </div>
             </div>

@@ -43,3 +43,7 @@ body {
 .Hero_Name_Section {
   font-family: 'Croissant One', cursive;
 }
+
+.Icon_hover:hover {
+  color: rgb(255, 200, 107);
+}
