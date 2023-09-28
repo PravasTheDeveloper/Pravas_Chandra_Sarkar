@@ -6,12 +6,12 @@ export default function HeroSection() {
     return (
         <>
             <div className='w-full flex-1 container mx-auto flex'>
-                <div className='w-1/2 text-white'>
-                    <div className='w-[600px] h-full  flex flex-col justify-center items-center'>
-                        <div className='w-full h-auto text-4xl'>
-                            I'M <span className='text-yellow-color text-6xl font-bold Hero_Name_Section'>Pravas</span>
+                <div className='md:w-1/2 w-full text-white'>
+                    <div className='md:w-[600px] w-full h-full  flex flex-col justify-center items-center md:text-left text-center'>
+                        <div className='w-full h-auto md:text-4xl text-2xl'>
+                            I'M <span className='text-yellow-color md:text-6xl text-6xl font-bold Hero_Name_Section'>Pravas</span>
                         </div>
-                        <div className='w-full h-auto text-4xl my-14 '>
+                        <div className='w-full h-auto md:text-4xl text-xl my-14 '>
                             A <span className='text-yellow-color'>
                                 <Typewriter
                                     words={['MERN', 'FULL-STACK', 'MOBILE APP', 'SOFTWARE']}
@@ -25,13 +25,16 @@ export default function HeroSection() {
                             </span>
                             DEVELOPER
                         </div>
-                        <div className='w-full h-auto flex'>
+                        <div className='w-full h-auto flex justify-center md:justify-start'>
                             <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color cursor-pointer'>
                                 Contact Me
                             </div>
                         </div>
-                        <div className='w-full h-10 text-white text-2xl mt-10'>
-                            <div className='w-[300px] h-full flex items-center'>
+                        <div className='w-full h-10 text-white text-2xl mt-10 absolute bottom-10'>
+                            <div className='md:w-[300px] w-full h-full flex items-center justify-between '>
+                                <div className='flex-1 h-[4px] rounded-full bg-yellow-color mr-10'>
+
+                                </div>
                                 <div className='flex'>
                                     <div className='mr-10 Icon_hover duration-200 cursor-pointer'>
                                         <a href="https://www.facebook.com/profile.php?id=100034474604538" target='_blank'>
