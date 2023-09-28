@@ -29,6 +29,10 @@ body {
   color: rgb(151, 152, 154);
 }
 
+.blue-bg {
+  background-color: rgb(49, 51, 59)
+}
+
 .Hero_Section_Image {
   border-top: 5px solid rgb(255, 200, 107);
   border-bottom: 5px solid rgb(255, 200, 107);
@@ -46,4 +50,26 @@ body {
 
 .Icon_hover:hover {
   color: rgb(255, 200, 107);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(151, 152, 154);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 200, 107);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 100px;
 }

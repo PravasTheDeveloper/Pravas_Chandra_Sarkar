@@ -1,3 +1,4 @@
+import AboutSection from "../../components/About/AboutSection";
 import HomePage from "../../components/HeroHome/HomePage";
 
 export default function Home() {
@@ -5,6 +6,8 @@ export default function Home() {
     <>
       <main>
         <HomePage />
+        <AboutSection />
+        
       </main>
     </>
   )
