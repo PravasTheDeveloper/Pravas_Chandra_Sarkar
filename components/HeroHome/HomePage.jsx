@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className='w-full h-screen bg-black-200 flex flex-col'>
       <NavigationPenel />
-      <HeroSection />
+      {/* <HeroSection /> */}
     </div>
   )
 }

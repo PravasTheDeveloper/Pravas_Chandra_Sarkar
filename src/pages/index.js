@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <main>
         <HomePage />
-        <AboutSection />
+        {/* <AboutSection /> */}
         
       </main>
     </>

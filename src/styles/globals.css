@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bg-black-200 {
   background-color: rgb(52, 53, 58);
 }
@@ -61,7 +67,7 @@ body {
 ::-webkit-scrollbar-track {
   background: rgb(151, 152, 154);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 200, 107);
@@ -70,6 +76,10 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
   border-radius: 100px;
+}
+
+.Mobile_View_Nav{
+  background-color: #000000a6;
 }

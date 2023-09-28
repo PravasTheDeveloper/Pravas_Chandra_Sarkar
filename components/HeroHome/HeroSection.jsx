@@ -56,10 +56,10 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className='w-1/2  flex justify-end items-center relative'>
-                    <div className='w-[500px] h-[500px] p-5 rounded-full overflow-hidden Hero_Section_Image'>
+                <div className='w-1/2 hidden md:flex justify-end items-center relative'>
+                    <div className='2xl:w-[500px] 2xl:h-[500px] w-[400px] h-[400px] p-5 rounded-full overflow-hidden Hero_Section_Image'>
                         <div className='w-full h-full bg-slate-600 rounded-full'>
-                            <img src="/image.png" alt="" />
+                            <img src="/image.png" className='w-full h-full' alt='My Profile Picture' />
                         </div>
                     </div>
                 </div>
