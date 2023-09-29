@@ -7,7 +7,7 @@ export default function HeroSection() {
         <>
             <div className='w-full flex-1 container mx-auto flex'>
                 <div className='md:w-1/2 w-full text-white'>
-                    <div className='md:w-[600px] w-full h-full  flex flex-col justify-center items-center md:text-left text-center mt-[-100px]'>
+                    <div className='md:w-[600px] w-full h-full  flex flex-col justify-center items-center md:text-left text-center mt-[-100px] md:mt-0'>
                         <div className='w-full h-auto md:text-4xl text-2xl'>
                             I'M <span className='text-yellow-color md:text-6xl text-6xl font-bold Hero_Name_Section'>Pravas</span>
                         </div>

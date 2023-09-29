@@ -80,6 +80,10 @@ body {
   border-radius: 100px;
 }
 
-.Mobile_View_Nav{
+.Mobile_View_Nav {
   background-color: #000000cb;
+}
+
+.Skill_Section_Bg {
+  background-color: rgb(61, 62, 66);
 }
