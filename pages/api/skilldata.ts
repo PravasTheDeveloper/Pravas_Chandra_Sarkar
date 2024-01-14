@@ -1,6 +1,3 @@
-// title: string,
-//     image: string
-
 import { connectToDb } from '@/db/connect';
 import prisma from '@/prisma';
 import type { NextApiRequest, NextApiResponse } from 'next'
