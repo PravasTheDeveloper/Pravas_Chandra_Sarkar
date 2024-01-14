@@ -9,7 +9,13 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  if (req.method === "GET"){
-    res.status(200).json({ messege: "hei" });
+  if (req.method === "POST"){
+    if (!title || !image) {
+      res.status(402).json({ messege: "Please Fill All The Feild" });
+    } else {
+       res.status(200).json({ messege: "Good Man" });
+    }
+  }else{
+   res.status(201).json({ messege: "You Are Bad" });
   }
 }
