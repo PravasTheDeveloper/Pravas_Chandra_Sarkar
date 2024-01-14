@@ -1,7 +1,8 @@
+'use client'
 import axios from 'axios'
 import React, { useState } from 'react'
 
-export default function addskill() {
+export default function AddSkill() {
 
     const [title, settitle] = useState("")
     const [image, setimage] = useState("")

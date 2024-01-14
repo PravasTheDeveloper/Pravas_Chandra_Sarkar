@@ -13,8 +13,8 @@ function AboutSection() {
 
                         </div>
                         <div className='flex-1'>
-                            I'm Pravas Chandra Sarkar, a devoted <span className='text-yellow-color font-semibold text-lg'>MERN Developer</span>, passionate about crafting sleek and high-performing web applications. Armed with <span className='text-yellow-color font-semibold text-lg'>MongoDB, Express.js, React, and Node.js,</span> I excel at solving intricate challenges, from optimizing databases to designing user-friendly interfaces.
-                            My love for staying at the forefront of technology ensures that my work is always innovative and up-to-date. I thrive in collaborative environments and am eager to connect with fellow enthusiasts .<span className='text-yellow-color font-semibold text-lg'>Let's build the future of the web together!</span>
+                            I&aposm Pravas Chandra Sarkar, a devoted <span className='text-yellow-color font-semibold text-lg'>MERN Developer</span>, passionate about crafting sleek and high-performing web applications. Armed with <span className='text-yellow-color font-semibold text-lg'>MongoDB, Express.js, React, and Node.js,</span> I excel at solving intricate challenges, from optimizing databases to designing user-friendly interfaces.
+                            My love for staying at the forefront of technology ensures that my work is always innovative and up-to-date. I thrive in collaborative environments and am eager to connect with fellow enthusiasts .<span className='text-yellow-color font-semibold text-lg'>Let&aposs build the future of the web together!</span>
                         </div>
                     </div>
                 </div>
