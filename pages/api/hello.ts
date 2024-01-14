@@ -1,5 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { connectToDb } from '@/db/connect';
+import prisma from '@/prisma';
 
 type Data = {
   messege: string
