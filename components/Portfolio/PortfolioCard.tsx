@@ -1,6 +1,12 @@
 import React from 'react'
 
-function PortfolioCard({ image, title, des }) {
+interface PortfiolioDataProps{
+    image:string,
+    title:string,
+    des:string
+}
+
+function PortfolioCard({ image, title, des }:PortfiolioDataProps) {
     return (
         <div className='w-[400px] h-[300px] bg-slate-700 rounded m-10 relative'>
             <div className='bg-red-500 w-full h-[80%] rounded-lg overflow-hidden'>
@@ -19,3 +25,7 @@ function PortfolioCard({ image, title, des }) {
 }
 
 export default PortfolioCard
+
+// uXBQJBCmM6tlJPYR
+
+// 

@@ -1,21 +1,21 @@
 import React from 'react'
-import PortfolioCard from './PortfolioCard'
-import PortfolioData from '../../PortfolioData'
+import SkillCard from './SkillCard'
+import SkillData from '../../SkillData'
 
-function PorfolioSection() {
+export default function SkillPenel() {
 
     return (
         <>
-            <div className='blue-bg w-full h-auto py-[200px]'>
+            <div className='blue-bg w-full h-auto'>
                 <div className='w-full h-full container mx-auto'>
                     <div className='text-4xl font-semibold text-white'>
-                        Portfolio <span className='text-yellow-color'>.</span>
+                        My Skills <span className='text-yellow-color'>.</span>
                     </div>
                     <div className='w-full h-auto mt-10 flex flex-wrap justify-center'>
                         {
-                            PortfolioData.map((data, index) => {
+                            SkillData.map((data, index) => {
                                 return (
-                                    <PortfolioCard key={index} image={data.image} title={data.title} des={data.des} />
+                                    <SkillCard key={index} image={data.image} title={data.title} />
                                 )
                             })
                         }
@@ -25,5 +25,3 @@ function PorfolioSection() {
         </>
     )
 }
-
-export default PorfolioSection

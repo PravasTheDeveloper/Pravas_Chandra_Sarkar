@@ -1,6 +1,11 @@
 import React from 'react'
 
-function SkillCard({ image, title }) {
+interface SkillData{
+    image:string,
+    title:string
+}
+
+function SkillCard({ image, title }:SkillData) {
     return (
         <div className='w-[250px] h-[250px] Skill_Section_Bg rounded m-10'>
             <div className='w-full h-[200px] p-10'>
