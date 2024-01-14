@@ -17,7 +17,7 @@ export default async function handler(
             if (!title || !image) {
                 res.status(402).json({ messege: "Please Fill All The Feild" });
             } else {
-                await connectToDb()
+                await prisma.$connect()
 
                 const findpreviousdata = await prisma.skilldata.findFirst({ where: { title: title } })
 
