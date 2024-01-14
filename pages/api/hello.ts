@@ -10,6 +10,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   if (req.method === "POST"){
+    const { title, image } = req.body;
     if (!title || !image) {
       res.status(402).json({ messege: "Please Fill All The Feild" });
     } else {
