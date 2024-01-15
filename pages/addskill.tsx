@@ -8,7 +8,7 @@ export default function AddSkill() {
     const [image, setimage] = useState("")
 
     const handlesubmit = async() => {
-        const adddata = await axios.post("http://localhost:3000/api/skilldata",{title,image})
+        const adddata = await axios.post("https://pravas-chandra-sarkar.vercel.app/api/skilldata",{title,image})
 
         console.log(adddata)
     }
