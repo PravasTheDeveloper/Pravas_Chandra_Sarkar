@@ -1,6 +1,5 @@
-import { connectToDb } from '@/db/connect';
-import prisma from '@/prisma';
 import type { NextApiRequest, NextApiResponse } from 'next'
+import prisma from '@/lib/prismadb'
 
 type Data = {
     name: string
