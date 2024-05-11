@@ -28,6 +28,18 @@ const SkillData = [
         "image": "nodejs.png"
     },
     {
+        "title": "Next.js",
+        "image": "nextjs.png"
+    },
+    {
+        "title": "Prisma",
+        "image": "prisma.png"
+    },
+    {
+        "title": "Type Script",
+        "image": "typescript.png"
+    },
+    {
         "title": "MERN",
         "image": "mern.png"
     },
@@ -36,8 +48,8 @@ const SkillData = [
         "image": "python.png"
     },
     {
-        "title": "React Native",
-        "image": "react-native.png"
+        "title": "Flutter",
+        "image": "flutter.png"
     },
     {
         "title": "Graph QL",
@@ -47,6 +59,15 @@ const SkillData = [
         "title": "Docker",
         "image": "docker.png"
     },
+    {
+        "title": "Kotlin",
+        "image": "kotlin.png"
+    },
+    {
+        "title": "Android Studio",
+        "image": "android.png"
+    },
+    
 ]
 
 export default SkillData

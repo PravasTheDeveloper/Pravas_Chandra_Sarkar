@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs"
 import Image from 'next/image'
+import ContactMe from '@/Contactme'
 
 export default function HeroSection() {
+
+    const [ContactMeBar, setContactMeBar] = useState(false)
+
     return (
         <>
             <div className='w-full flex-1 container mx-auto flex'>
                 <div className='md:w-1/2 w-full text-white'>
                     <div className='md:w-[600px] w-full h-full  flex flex-col justify-center items-center md:text-left text-center mt-[-100px] md:mt-0'>
                         <div className='w-full h-auto md:text-4xl text-2xl'>
-                            I&aposM <span className='text-yellow-color md:text-6xl text-6xl font-bold Hero_Name_Section'>Pravas</span>
+                            {`I'M`} <span className='text-yellow-color md:text-6xl text-6xl font-bold Hero_Name_Section'>Pravas</span>
                         </div>
                         <div className='w-full h-auto md:text-4xl text-xl my-14 '>
                             A <span className='text-yellow-color'>
@@ -27,7 +31,7 @@ export default function HeroSection() {
                             DEVELOPER
                         </div>
                         <div className='w-full h-auto flex justify-center md:justify-start'>
-                            <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color cursor-pointer'>
+                            <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color cursor-pointer' onClick={() => { setContactMeBar(true) }}>
                                 Contact Me
                             </div>
                         </div>
@@ -60,11 +64,28 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className='w-1/2 hidden md:flex justify-end items-center relative'>
-                    <div className='2xl:w-[500px] 2xl:h-[500px] w-[400px] h-[400px] p-5 rounded-full overflow-hidden Hero_Section_Image'>
-                        <div className='w-full h-full bg-slate-600 rounded-full'>
-                            <Image src={"/image.png"} height={400} width={400} className='w-full h-full' alt='My Profile Picture' />
+                <div className='w-1/2 hidden md:flex justify-end items-center relative overflow-hidden'>
+                    <div className='2xl:w-[500px] 2xl:h-[500px] w-[400px] h-[400px] p-5 rounded-full overflow-hidden Hero_Section_Image '>
+                        <div className='w-full h-full bg-slate-600 rounded-full overflow-hidden'>
+                            <Image src={"/myimage.png"} height={400} width={400} className='w-full h-full' alt='My Profile Picture' />
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className={`w-full h-screen bg-[#00000057] absolute justify-center items-center ${ContactMeBar === true ? "flex" : "hidden"}`}>
+                <div className="w-2/3 h-2/3 bg-black-200 rounded-xl p-20">
+                    <div>
+                        {
+                            ContactMe.map((data) => {
+                                return (
+                                    <>
+                                        <div className='text-white font-semibold mb-3'>
+                                            {data.name} : <span className='text-white font-normal ml-5'>{data.link}</span>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

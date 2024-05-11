@@ -8,7 +8,7 @@ interface SkillData{
 
 function SkillCard({ image, title }:SkillData) {
     return (
-        <div className='w-[250px] h-[250px] Skill_Section_Bg rounded m-10'>
+        <div className='w-[200px] h-[200px] Skill_Section_Bg rounded m-10'>
             <div className='w-full h-[200px] p-10'>
                 <Image src={`/Skills/${image}`} width={300} height={300} alt={title} className='w-full' />
             </div>

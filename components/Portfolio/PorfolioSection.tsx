@@ -20,7 +20,7 @@ function PorfolioSection() {
                         {
                             PortfolioData.map((data, index) => {
                                 return (
-                                    <PortfolioCard key={index} image={data.image} title={data.title} des={data.des} />
+                                    <PortfolioCard key={index} links={data.links} number={data.number} images={data.images} title={data.title} des={data.des} />
                                 )
                             })
                         }

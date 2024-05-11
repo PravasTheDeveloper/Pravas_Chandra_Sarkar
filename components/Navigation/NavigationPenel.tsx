@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa"
 import { RxCross2 } from "react-icons/rx"
@@ -10,9 +11,9 @@ export default function NavigationPenel() {
         <>
             <div className='w-full h-[70px] bg-black-200 container mx-auto flex justify-between items-center px-5'>
                 {/* Logo Section */}
-                <div className='text-white text-4xl'>
+                <Link href={"/"} className='text-white text-4xl'>
                     <span className='md:text-4xl text-2xl text-yellow-color text-yellow-color font-semibold z-50'>P</span>.
-                </div>
+                </Link>
                 {/* Navigation */}
                 <div className='hidden text-md font-semibold md:flex'>
                     <div className='ml-14 text-center text-white duration-200 cursor-pointer'>Home</div>
