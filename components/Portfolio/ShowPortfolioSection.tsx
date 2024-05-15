@@ -47,7 +47,7 @@ export default function ShowPortfolioSection({ data }: any) {
           <div className='w-full h-14 flex flex-wrap'>
             {data.images.map((data: ImageData, index: number) => {
               return (
-                <Image src={`/Portfolio/${data}`} onClick={() => setimageNumber(index)} className={`h-full w-auto mr-5 rounded cursor-pointer duration-100 ${imageNumber === index ? "border p-1" : null}`} width={1920} height={1080} alt='hello' />
+                <Image src={`/Portfolio/${data}`} key={index} onClick={() => setimageNumber(index)} className={`h-full w-auto mr-5 rounded cursor-pointer duration-100 ${imageNumber === index ? "border p-1" : null}`} width={1920} height={1080} alt='hello' />
               )
             })}
           </div>
