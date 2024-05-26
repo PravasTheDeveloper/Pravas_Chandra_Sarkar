@@ -3,6 +3,10 @@ import { Typewriter } from 'react-simple-typewriter'
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs"
 import Image from 'next/image'
 import ContactMe from '@/Contactme'
+import { RxCross2 } from "react-icons/rx";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function HeroSection() {
 
@@ -10,7 +14,7 @@ export default function HeroSection() {
 
     return (
         <>
-            <div className='w-full flex-1 container mx-auto flex'>
+            <div id='HomeSection' className='w-full flex-1 container mx-auto flex'>
                 <div className='md:w-1/2 w-full text-white'>
                     <div className='md:w-[600px] w-full h-full  flex flex-col justify-center items-center md:text-left text-center mt-[-100px] md:mt-0'>
                         <div className='w-full h-auto md:text-4xl text-2xl'>
@@ -29,6 +33,13 @@ export default function HeroSection() {
                                 />
                             </span>
                             DEVELOPER
+                        </div>
+                        <div className='w-full mb-10 md:flex hidden'>
+                            <div className='text-4xl flex'>
+                                <a href="https://www.facebook.com/profile.php?id=100034474604538" target='_'><FaFacebookSquare /></a>
+                                <a href="https://www.linkedin.com/in/pravaschandrasarkar/" target='_'><FaLinkedin className='mx-5' /></a>
+                                <a href="https://github.com/PravasTheDeveloper" target='_'><FaGithub /></a>
+                            </div>
                         </div>
                         <div className='w-full h-auto flex justify-center md:justify-start'>
                             <div className='Contact_ME_Section px-6 py-2 rounded-md font-semibold text-yellow-color cursor-pointer' onClick={() => { setContactMeBar(true) }}>
@@ -73,7 +84,11 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className={`w-full h-screen bg-[#00000057] absolute justify-center items-center ${ContactMeBar === true ? "flex" : "hidden"}`}>
-                <div className="w-2/3 h-2/3 bg-black-200 rounded-xl p-20">
+                
+                <div className="w-2/4 h-2/3 bg-black-200 rounded-xl p-20 relative">
+                    <div onClick={()=>{setContactMeBar(false)}} className='bg-rose-400 cursor-pointer w-7 h-7 text-2xl rounded-full text-white flex justify-center items-center absolute top-[-10px] right-[-10px]'>
+                        <RxCross2 />
+                    </div>
                     <div>
                         {
                             ContactMe.map((data) => {
@@ -87,6 +102,7 @@ export default function HeroSection() {
                             })
                         }
                     </div>
+                    
                 </div>
             </div>
         </>

@@ -11,7 +11,7 @@ function PorfolioSection() {
 
     return (
         <>
-            <div className='blue-bg w-full h-auto py-[200px]'>
+            <div className='blue-bg w-full h-auto py-[200px]' id='PorfolioSection'>
                 <div className='w-full h-full container mx-auto'>
                     <div className='text-4xl font-semibold text-white'>
                         Portfolio <span className='text-yellow-color'>.</span>

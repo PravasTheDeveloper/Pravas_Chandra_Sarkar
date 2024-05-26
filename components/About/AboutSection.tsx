@@ -3,7 +3,7 @@ import React from 'react'
 function AboutSection() {
     return (
         <>
-            <div className='blue-bg py-[200px] text-white md:px-0 px-10'>
+            <div id='AboutSection' className='blue-bg py-[200px] text-white md:px-0 px-10'>
                 <div className="container mx-auto">
                     <div className='text-4xl font-semibold mb-5'>
                         About Me <span className='text-yellow-color'>.</span>

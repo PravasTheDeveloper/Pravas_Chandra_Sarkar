@@ -8,11 +8,11 @@ interface SkillData{
 
 function SkillCard({ image, title }:SkillData) {
     return (
-        <div className='w-[200px] h-[200px] Skill_Section_Bg rounded m-10'>
-            <div className='w-full h-[200px] p-10'>
-                <Image src={`/Skills/${image}`} width={300} height={300} alt={title} className='w-full' />
+        <div className='w-full h-full Skill_Section_Bg rounded'>
+            <div className='w-full h-[200px] p-10 flex flex-col items-center'>
+                <Image src={`/Skills/${image}`} width={300} height={300} alt={title} className='w-[150px] h-auto' />
             </div>
-            <div className='w-full h-[50px]'>
+            <div className='w-full h-full'>
                 <h5 className='text-lg font-bold text-white text-center'>{title}</h5>
             </div>
         </div>
